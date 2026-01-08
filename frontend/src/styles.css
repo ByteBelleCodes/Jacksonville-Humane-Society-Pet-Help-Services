@@ -1,0 +1,109 @@
+:root{
+  --bg: #0f1724; /* dark fallback used sparingly */
+  --page-bg: #f7fafc;
+  --card-bg: #ffffff;
+  --muted: #6b7280;
+  --text: #111827;
+  --brand: #0366d6;
+  --accent: #4caf50;
+  --danger: #c84630;
+  --surface: #f1f5f9;
+  --border: #e6eef6;
+  --radius: 10px;
+  --shadow-1: 0 6px 18px rgba(16,24,40,0.06);
+  --glass: rgba(255,255,255,0.6);
+}
+
+/* Base */
+html,body,#root{height:100%;}
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  margin: 0;
+  color: var(--text);
+  background: var(--page-bg);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height: 1.45;
+}
+
+.app-shell{max-width:1100px;margin:0 auto;padding:20px}
+
+/* Topbar */
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 18px;background:linear-gradient(180deg,#ffffff,#fbfdff);border-bottom:1px solid var(--border);border-radius:8px}
+.topbar .brand{font-weight:700;color:var(--brand);font-size:18px}
+.topbar nav a{margin-left:12px;text-decoration:none;color:var(--brand);font-weight:600}
+
+.main{padding:18px 0}
+
+/* Buttons */
+button, .btn{cursor:pointer;padding:8px 12px;border-radius:8px;border:1px solid transparent;background:var(--brand);color:#fff;font-weight:600}
+.btn-outline{background:transparent;color:var(--text);border:1px solid var(--border)}
+.btn-ghost{background:transparent;color:var(--text);border:0}
+.btn-small{padding:6px 8px;font-size:13px;border-radius:6px}
+button:disabled, .btn:disabled{cursor:not-allowed;opacity:0.65}
+button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible{outline:3px solid rgba(3,102,214,0.18);outline-offset:2px}
+
+/* Cards */
+.card{background:var(--card-bg);padding:14px;border-radius:var(--radius);box-shadow:var(--shadow-1);border:1px solid transparent}
+.card-quiet{background:linear-gradient(180deg,#fff,#fbfdff)}
+
+/* Grid utilities */
+.grid{display:grid;gap:16px}
+.grid-2{grid-template-columns:2fr 1fr}
+.grid-cards{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+
+/* Tables */
+table{border-collapse:collapse;width:100%;background:transparent;border-radius:8px;overflow:hidden}
+table th, table td{padding:10px 12px;text-align:left;border-bottom:1px solid #f0f4f8}
+table th{background:var(--surface);font-weight:700;color:var(--muted);font-size:13px}
+table tr:last-child td{border-bottom:0}
+
+/* Forms */
+input[type="text"], input[type="email"], input[type="password"], input[type="tel"], input[type="number"], input[type="date"], textarea, select{padding:8px 10px;border:1px solid var(--border);border-radius:8px;background:#fff}
+input[type="file"]{padding:6px 0}
+label{font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+
+/* Notices */
+.notice{border:1px solid var(--border);background:linear-gradient(180deg,#fff,#fbfdff);padding:10px 12px;border-radius:10px;box-shadow:var(--shadow-1)}
+.notice-success{border-color:rgba(76,175,80,0.35)}
+.notice-error{border-color:rgba(200,70,48,0.35)}
+.notice-warn{border-color:rgba(3,102,214,0.25)}
+.notice-title{font-weight:700;margin-bottom:4px}
+.notice-success .notice-title{color:var(--accent)}
+.notice-error .notice-title{color:var(--danger)}
+.notice-warn .notice-title{color:var(--brand)}
+
+/* Layout helpers */
+.form-grid{display:grid;gap:10px}
+.row{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.spacer{flex:1}
+.stack{display:grid;gap:8px}
+
+/* Empty state */
+.empty{padding:12px;border:1px dashed var(--border);border-radius:10px;color:var(--muted);background:var(--card-bg)}
+
+/* Progress */
+.progress{height:10px;background:var(--surface);border-radius:999px;overflow:hidden}
+.progress > i{display:block;height:100%;background:linear-gradient(90deg,var(--accent),#2e7d32);width:0}
+
+/* Preview card (used by upload preview) */
+.preview-card{border-radius:8px;padding:10px;background:#fff;border:1px solid var(--border);box-shadow:var(--shadow-1)}
+
+/* Small utilities */
+.muted{color:var(--muted)}
+.kpi{font-size:28px;font-weight:700}
+.kpi-sub{font-size:12px;color:var(--muted)}
+
+/* Responsive tweaks */
+@media (max-width:800px){
+  .grid-2{grid-template-columns:1fr}
+  .topbar{flex-direction:column;align-items:flex-start;gap:8px}
+}
+
+/* Links as buttons */
+a.btn-link{display:inline-block;padding:8px 10px;border-radius:8px;text-decoration:none}
+
+/* Ensure preview tables are readable */
+.preview-table th, .preview-table td{font-size:13px;padding:8px}
+
+
