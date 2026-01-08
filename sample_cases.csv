@@ -1,0 +1,12 @@
+case_id,contact_name,phone_number,pet_name,pet_species,pet_breed,initial_request,status,outcome,notes
+1001,John Doe,9045551234,Bella,Dog,Labrador,Needs food assistance,open,,First-time visitor
+1002,Emily Carter,9045555678,Whiskers,Cat,Siamese,Veterinary referral,open,,"In pain, urgent"
+1003,Michael Smith,4075559811,Rocky,Dog,Bulldog,Behavior help,open,,Owner struggling with aggression issues
+1004,Sarah Johnson,9045554422,Luna,Cat,Domestic Shorthair,Emergency boarding,open,,Evicted from housing
+1005,David Lee,9125551122,Shadow,Dog,German Shepherd,Free pet food,closed,Pet kept in home,Returning client
+1006,Alicia Brown,8505557721,Kiki,Cat,Maine Coon,Owner needs guidance on cat handling,open,,Owner anxious
+1007,Chris Wilson,3865552211,Buddy,Dog,Beagle,Request for surrender,open,,Owner cannot keep dog
+1008,Nina Patel,9045550033,Pip,Dog,Poodle,Lost pet assistance,closed,Referred to Animal Control,Pet found later
+1009,Oscar Reyes,3525558899,Simba,Cat,Bengal,Low-cost vaccination info,open,,Requested follow-up
+1010,Amy Larson,9045557788,Daisy,Dog,Golden Retriever,Request for temporary foster,open,,Owner hospitalized
+1011,johndoee,904555778,,,,Request for temporary foster,open,,Owner hospitalized
