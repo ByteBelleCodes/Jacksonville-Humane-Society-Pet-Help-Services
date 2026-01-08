@@ -53,6 +53,7 @@ This project was a collaborative effort by a team of three. We adopted a "shared
 ---
 
 ## 📊 Dashboard Preview
+<img width="557" height="318" alt="image" src="https://github.com/user-attachments/assets/1887dec0-b995-46a2-9ab6-8933e4fca423" />
 
 
 ---
@@ -180,3 +181,4 @@ Repo layout:
 * **Name:** Beauti Kumari
 * **LinkedIn:** [linkedin.com/in/beauti-kumari](https://linkedin.com/in/beauti-kumari)
 * **Portfolio:** [github.com/ByteBelleCodes](https://github.com/ByteBelleCodes)
+
